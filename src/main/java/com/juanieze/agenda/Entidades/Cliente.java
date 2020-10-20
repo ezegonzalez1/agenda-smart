@@ -13,7 +13,7 @@ public class Cliente implements Interface {
 	private static ArrayList<Cliente> clientes;
 	
 	//un cambio
-	
+	// esto es una pruebas
 	
 
 	public Cliente(String nombre, String apellido, int dni, String contraseña, String mail, Telefono telefono) {
