@@ -13,7 +13,9 @@ public class Cliente implements Interface {
 	private static ArrayList<Cliente> clientes;
 	
 
-	
+	public Cliente() {
+		
+	}
 
 	public Cliente(String nombre, String apellido, int dni, String contraseña, String mail, Telefono telefono) {
 		this.nombre = nombre;

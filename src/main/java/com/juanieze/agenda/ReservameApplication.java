@@ -11,23 +11,27 @@ public class ReservameApplication {
 	static Scanner in = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		// SpringApplication.run(ReservameApplication.class, args);
+		SpringApplication.run(ReservameApplication.class, args);
 
+		/*
 		mostrarMensaje("Bienvenido");
 		ingresar();
 		registrarse();
-
+		*/
 	}
 
+	/*
 	static void mostrarMensaje(String mensaje) {
 		System.out.println(mensaje);
 	}
 
+	
 	static void ingresar() {
 		// valida usuario(dni) y contraseña
 		boolean paso1, paso2;
 		int dni;
 		String contraseña;
+		Cliente cliente = new Cliente();
 		do {
 			mostrarMensaje("Ingrese su numero de dni");
 			dni = in.nextInt();
@@ -44,4 +48,5 @@ public class ReservameApplication {
 	static void registrarse() {
 
 	}
+	*/
 }
