@@ -23,6 +23,8 @@ public class Cliente implements Interface {
 		this.mail = mail;
 		this.telefono = telefono;
 	}
+	
+	//esto es una prueba de eze
 
 	public void newCliente() {
 		String nombre, apellido, contraseña, mail;
