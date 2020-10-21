@@ -1,5 +1,6 @@
 package com.juanieze.agenda.RestService;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -11,7 +12,8 @@ import com.juanieze.agenda.LogicaNegocio.IngresoService;
 @RestController
 public class UsuariosRestService {
 	
-	IngresoService ingresoService = new IngresoService();
+	@Autowired
+	IngresoService ingresoService;
 	
 	/*
 	@GetMapping("/testservice")
@@ -21,9 +23,9 @@ public class UsuariosRestService {
 	*/
 	
 	@GetMapping("/novedades")
-	public String obtenerNovedades(@RequestParam(value = "usuario") String usuario, @RequestParam(value = "password") String password) {
+	public String obtenerNovedades(@RequestParam(value = "mail") String mail, @RequestParam(value = "password") String password) {
 		try {
-			return ingresoService.ingresar(usuario, password);
+			return ingresoService.ingresar(mail, password);
 		} catch (Exception e) {
 			throw new ResponseStatusException(HttpStatus.NO_CONTENT, "No exixste el usuario", e);
 		}

@@ -1,0 +1,33 @@
+CREATE TABLE cliente (
+	id int,
+    nombre varchar(255),
+    apellido varchar(255),
+    dni varchar(255),
+    contrasenia varchar(255),
+    mail varchar(255),
+    telefono varchar(255)
+);
+
+
+
+/**********************************/
+Para crear tablas
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+);
+
+Para insertar datos
+
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+
+Tipos de datos: https://www.w3schools.com/sql/sql_datatypes.asp
+
+
+/* */
+
+
+
